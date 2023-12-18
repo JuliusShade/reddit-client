@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-import './Header.css';
-import logo from './pictures/RedditLogo.png';
-import { useSelector, useDispatch } from 'react-redux';
-import { setFilter } from './slices/filterSlice';
+import React, { useState } from "react";
+import "./Header.css";
+import logo from "./pictures/RedditLogo.png";
+import { useSelector, useDispatch } from "react-redux";
+import { setFilter } from "./slices/filterSlice";
 
 const Header = () => {
   const dispatch = useDispatch();
-  const [inputValue, setInputValue] = useState('');
-  const filter = useSelector((state) => state.filter.filter);
+  const [inputValue, setInputValue] = useState("");
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);

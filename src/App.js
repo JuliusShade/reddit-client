@@ -1,20 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import './App.css';
-import Header from './Header';
-import SubReddits from './SubReddits';
-import Post from './Post';
-import { useSelector, useDispatch } from 'react-redux';
-import { setFilter, fetchSubredditPostsAsync } from './slices/filterSlice';
-import { fetchSubreddits } from './api';
-import '@fortawesome/fontawesome-free/css/all.css';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import Header from "./Header";
+import SubReddits from "./SubReddits";
+import Post from "./Post";
+import { useSelector, useDispatch } from "react-redux";
+import { setFilter, fetchSubredditPostsAsync } from "./slices/filterSlice";
+import { fetchSubreddits } from "./api";
+import "@fortawesome/fontawesome-free/css/all.css";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faArrowUp, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faArrowUp, faArrowDown);
 
 function App() {
-  const selectedSubreddit = useSelector((state) => state.filter.selectedSubreddit); // Updated selector
+  const selectedSubreddit = useSelector(
+    (state) => state.filter.selectedSubreddit
+  ); // Updated selector
   const dispatch = useDispatch();
   const [subreddits, setSubreddits] = useState([]);
 
@@ -22,7 +23,7 @@ function App() {
     // Fetch initial subreddits and set the first one as the selected subreddit
     fetchSubreddits()
       .then((data) => {
-        console.log('Fetched subreddits:', data);
+        console.log("Fetched subreddits:", data);
         setSubreddits(data);
 
         // Set the first subreddit as the selected subreddit
@@ -31,7 +32,7 @@ function App() {
         }
       })
       .catch((error) => {
-        console.error('Error fetching subreddits:', error);
+        console.error("Error fetching subreddits:", error);
       });
   }, [dispatch]);
 
@@ -40,16 +41,16 @@ function App() {
     if (selectedSubreddit) {
       dispatch(fetchSubredditPostsAsync(selectedSubreddit))
         .then((data) => {
-          console.log('Fetched subreddit posts:', data);
+          console.log("Fetched subreddit posts:", data);
         })
         .catch((error) => {
-          console.error('Error fetching subreddit posts:', error);
+          console.error("Error fetching subreddit posts:", error);
         });
     }
   }, [selectedSubreddit, dispatch]);
 
   const handleSubredditClick = (subreddit) => {
-    console.log('Subreddit clicked:', subreddit);
+    console.log("Subreddit clicked:", subreddit);
     dispatch(setFilter(subreddit));
   };
 
@@ -57,7 +58,10 @@ function App() {
     <div className="App">
       <Header />
       <Post />
-      <SubReddits subreddits={subreddits} onSubredditClick={handleSubredditClick} />
+      <SubReddits
+        subreddits={subreddits}
+        onSubredditClick={handleSubredditClick}
+      />
     </div>
   );
 }
