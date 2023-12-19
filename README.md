@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Minimal Reddit Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://github.com/JuliusShade/reddit-client/assets/107821996/d7f61c8e-f398-42f2-9167-73448ec681b4)
 
-## Available Scripts
+## Introduction
+Welcome to the Minimal Reddit Client, a sleek and user-friendly interface for interacting with Reddit's vast array of content. This client focuses on providing a clutter-free environment to enhance your browsing experience.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### Interactive Posts
+- **Like/Dislike:** Express your opinion on posts with a simple like or dislike.
+- **Comments:** Delve into detailed discussions by accessing the comments section for each post.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](https://github.com/JuliusShade/reddit-client/assets/107821996/7258ef83-09ef-4373-a55f-10f75571e7ec)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Post Filtering
+- **Refined Search:** Filter through the posts in your current subreddit to find exactly what you're looking for.
 
-### `npm test`
+![image](https://github.com/JuliusShade/reddit-client/assets/107821996/c6605936-78f9-46cf-9a23-59bdb3bb549e)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Subreddit Navigation
+- **Sidebar Selection:** Choose from a variety of subreddits on the sidebar to switch your main view to different posts.
 
-### `npm run build`
+![image](https://github.com/JuliusShade/reddit-client/assets/107821996/cb07555c-2759-4131-980d-89d174c6abf1)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get started with the Minimal Reddit Client:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your_username/minimal-reddit-client.git
+- npm install from the root directory
+- npm start
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Distributed under the MIT License.
